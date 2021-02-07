@@ -10,13 +10,15 @@
 wdir = "C:/Users/uuresin/Desktop/MYGIT/R-codes"
 setwd(wdir)
 #
+
+## LIBRARY IMPORT
 library(jsonlite)
 
-##DATA IMPORTING
-new_measurement <- read.csv(file=paste("./test/data/",dataname,"_MeasY3.csv",sep=""),sep=";",header=T)
+## DATA IMPORTING
+new_measurement <- read.csv(file=paste("./data/caret2json/example_data.csv", ,sep=";",header=T)
 
-##MODELS IMPORTING
-if(T){org_model<-readRDS(file=paste("./test/models/", dataname, "_comp_model_nb1.Rds", sep=""))}
+## MODELS IMPORTING
+if(T){org_model<-readRDS(file="./data/caret2json/example_caret_model.Rds")}
 
 ## MODEL TESTER
 tester <- function(yourmodel, originalmodel, measurement){
@@ -42,7 +44,7 @@ divideModel <- function(var){
   }
 }
 
-## UZERINDE CALISMAK ICIN ORG_MODEL'IN BIR KOPYASINI OLUSTURALIM
+## CREATE A COPY OF THE MODEL
 org_model -> test_model
 
 # IF YOU GET "PREDICTION ERROR" --> TRY TO ADD [1] to the class!

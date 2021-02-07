@@ -1,3 +1,17 @@
+########################################
+## SCRIPT: CARET MODEL COMPRESSOR
+########################################
+## License: Ugur Uresin
+## Github: ugururesin
+## Mail: uresin.ugur@gmail.com
+########################################
+
+### USER INPUTS
+wdir = "C:/Users/uuresin/Desktop/MYGIT/R-codes"
+setwd(wdir)
+#
+
+## LIBRARY IMPORT
 compress_model <- function(model){
   
   #MUST BE KEPT
@@ -40,14 +54,4 @@ tester <- function(model, new_measurement){
 }
 
 
-tester(model_nb1,new_measurement)
-tester(model_nb2,new_measurement)
-tester(model_nb3,new_measurement)
-
-tester(model_nn1,new_measurement)
-tester(model_nn2,new_measurement)
-tester(model_nn3,new_measurement)
-
-tester(model_rf1,new_measurement)
-tester(model_rf2,new_measurement)
-tester(model_rf3,new_measurement)
+tester(model,new_measurement)

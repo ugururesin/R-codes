@@ -1,3 +1,16 @@
+########################################
+## SCRIPT: NAIVE-BAYES ACCURACY CALCULATOR
+########################################
+## License: Ugur Uresin
+## Github: ugururesin
+## Mail: uresin.ugur@gmail.com
+########################################
+
+### USER INPUTS
+wdir = "C:/Users/uuresin/Desktop/MYGIT/R-codes"
+setwd(wdir)
+#
+
 ### ACCURACY CALCULATOR
 get_accuracy_nb <- function(model, train_data, test_data) {
   

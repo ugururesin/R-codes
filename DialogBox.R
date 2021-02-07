@@ -1,3 +1,17 @@
+########################################
+## SCRIPT: DIALOG-BOX
+########################################
+## License: Ugur Uresin
+## Github: ugururesin
+## Mail: uresin.ugur@gmail.com
+########################################
+
+### USER INPUTS
+wdir = "C:/Users/uuresin/Desktop/MYGIT/R-codes"
+setwd(wdir)
+#
+
+## DIALOG-BOX FUNCTION
 mydialog <- function(){
   
   xvar <- tclVar("1")

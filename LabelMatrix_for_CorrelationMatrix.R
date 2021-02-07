@@ -1,5 +1,15 @@
-##LABEL MATRIX CREATOR FOR CORRELATION MATRIX
-#############################################
+########################################
+## SCRIPT: LABEL CREATOR FOR COR-MAT
+########################################
+## License: Ugur Uresin
+## Github: ugururesin
+## Mail: uresin.ugur@gmail.com
+########################################
+
+### USER INPUTS
+wdir = "C:/Users/uuresin/Desktop/MYGIT/R-codes"
+setwd(wdir)
+#
 
 ##NOTES: There should be correlation matrix called cormat!
 labelpairs <- function(cormat){
@@ -14,3 +24,4 @@ labelpairs <- function(cormat){
     }
   return(pair_labels)
 }
+###

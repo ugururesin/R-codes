@@ -1,9 +1,19 @@
-###################################################
-########### ERROR CONTRIBUTION ANALYSIS ###########
-###################################################
-# Package Install
-#install.packages("mRMRe")
-#library(mRMRe)
+########################################
+## SCRIPT: Contribution Analysis
+########################################
+## License: Ugur Uresin
+## Github: ugururesin
+## Mail: uresin.ugur@gmail.com
+########################################
+
+### USER INPUTS
+wdir = "C:/Users/uuresin/Desktop/MYGIT/R-codes"
+setwd(wdir)
+#
+
+## LIBRARY IMPORT
+install.packages("mRMRe")
+library(mRMRe)
 
 #Initial Data Check
 str(training_data)

@@ -1,3 +1,17 @@
+########################################
+## SCRIPT: TCL-TK
+########################################
+## License: Ugur Uresin
+## Github: ugururesin
+## Mail: uresin.ugur@gmail.com
+########################################
+
+### USER INPUTS
+wdir = "C:/Users/uuresin/Desktop/MYGIT/R-codes"
+setwd(wdir)
+#
+
+## LIBRARY IMPORT
 require(tcltk)
 
 my_toplevel <- function(parent=.TkRoot,title="",x=NA,y=NA){
@@ -123,8 +137,6 @@ my_value <- function(x){
   #  attr(x,"my_class")<-cls
   x
 }
-
-
 # change log
 # 2008.6.16 beta version
 # 2010.9.3 tclvalue.tkwin, my_set

@@ -11,7 +11,7 @@ wdir = "C:/Users/uuresin/Desktop/MYGIT/R-codes"
 setwd(wdir)
 #
 
-## LIBRARY IMPORT##
+## LIBRARY IMPORT
 library(mice)
 
 ## LOAD A DATA WITH MISSING VALUES

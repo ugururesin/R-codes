@@ -1,6 +1,20 @@
-##IMPUTATION TESTER
+########################################
+## SCRIPT: mice IMPUTATION TESTER
+########################################
+## License: Ugur Uresin
+## Github: ugururesin
+## Mail: uresin.ugur@gmail.com
+########################################
 
-#load a missing_data
+### USER INPUTS
+wdir = "C:/Users/uuresin/Desktop/MYGIT/R-codes"
+setwd(wdir)
+#
+
+## LIBRARY IMPORT##
+library(mice)
+
+## LOAD A DATA WITH MISSING VALUES
 missing_data <- raw_data1
 
 if(T){

@@ -1,8 +1,10 @@
-###########################
-## RANDOM DATA GENERATOR ##
-###########################
-## github.com/ugururesin ##
-###########################
+########################################
+## SCRIPT: RANDOM DATA GENERATOR
+########################################
+## License: Ugur Uresin
+## Github: ugururesin
+## Mail: uresin.ugur@gmail.com
+########################################
 
 ### USER INPUTS
 wdir = "C:/Users/uuresin/Desktop/MYGIT/ML-R"

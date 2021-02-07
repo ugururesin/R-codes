@@ -1,0 +1,4 @@
+neg_low;neg_high;pos_low;pos_high;label;size
+-2;0;0;2;0;10
+-3;-2;2;3;1;10
+-4;-3;3;4;2;10

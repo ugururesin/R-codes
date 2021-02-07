@@ -7,7 +7,7 @@
 ########################################
 
 ### USER INPUTS
-wdir = "C:/Users/uuresin/Desktop/MYGIT/ML-R"
+wdir = "C:/Users/uuresin/Desktop/MYGIT/R-codes"
 setwd(wdir)
 #
 tols_dir = "./data/random_data_generator/tolerances.csv";

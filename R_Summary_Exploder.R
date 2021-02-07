@@ -1,10 +1,20 @@
-### R SUMMARY FUNCTION EXPLODER
-###############################
-rawdata <- raw_data
+########################################
+## SCRIPT: R SUMMARY FUNCTION EXPLODER
+########################################
+## License: Ugur Uresin
+## Github: ugururesin
+## Mail: uresin.ugur@gmail.com
+########################################
+
+### USER INPUTS
+wdir = "C:/Users/uuresin/Desktop/MYGIT/R-codes"
+setwd(wdir)
+###
+
+## LOAD A DATA CALLED "RAWDATA"
 total <- 6*(dim(rawdata)[2])
 csum <- summary(rawdata)
 varName <- colnames(raw_data)
-
 
 ## GETTING MIN VALUES
 cmin <- c()
@@ -16,7 +26,6 @@ for(i in seq(1,target,6)){
   cmin[j] <- as.numeric(temp2)
   j <- j + 1
 }
-
 
 ## GETTING 1ST QUARTILE VALUES
 c1q <- c()

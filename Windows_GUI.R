@@ -1,3 +1,17 @@
+########################################
+## SCRIPT: WINDOWS GUI
+########################################
+## License: Ugur Uresin
+## Github: ugururesin
+## Mail: uresin.ugur@gmail.com
+########################################
+
+### USER INPUTS
+wdir = "C:/Users/uuresin/Desktop/MYGIT/R-codes"
+setwd(wdir)
+#
+
+## FUNCTION
 inputs <- function(){
   
   ## GEOMETRY

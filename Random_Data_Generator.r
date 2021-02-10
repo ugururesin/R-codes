@@ -12,10 +12,10 @@ setwd(wdir)
 #
 tols_dir = "./data/random_data_generator/tolerances.csv";
 data_dir = "./data/random_data_generator/sample_data.csv";
-outd_dir = "./data/random_data_generator/output.csv";
+outd_dir = "./data/random_data_generator/output2.csv";
 #
-colnum_labels = 12      #the column number of the labels in the data
-colnum_features = 14    #the column number where features are start in the data
+colnum_labels = 11      #the column number of the labels in the data
+colnum_features = 13    #the column number where features are start in the data
 ###
 
 
@@ -39,7 +39,14 @@ for(i in 1:dim(tols)[1]){
     label <- tols[i,5]
     for(j in 1:tols[i,6]){
         vals <- create_data(tols[i,1], tols[i,2], tols[i,3], tols[i,4], num_features)
-        data1 <- rbind(data1, c("SENTETIK_VERI", rep(NA,10), label, label, vals))
+        data1 <- rbind(data1,c(
+            "SENTETIK_VERI",
+            as.character(Sys.time()),
+            data[1,3],
+            rep(NA,8),
+            label,
+            label,
+            vals))
     }
 }
 

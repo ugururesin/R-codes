@@ -22,7 +22,10 @@ trial_data[-test_idx,] -> train_data
 trial_data[test_idx,] -> test_data
 
 # MODEL FIT
-lm(formula="Y~.", data=train_data) -> test_model
+target_feature_index <- i
+target_feature_label <- colnames(train_data)[target_feature_index]
+the_formula <- paste(target_feature_label, "~.", sep="")
+lm(formula=the_formula, data=train_data) -> test_model
 
 # DIFFERENCES
 as.integer(predict(test_model, test_data, se.fit = T)$fit) - test_data$Y -> test_diff

@@ -14,13 +14,13 @@ tols_dir = "./data/random_data_generator/tolerances.csv";
 data_dir = "./data/random_data_generator/sample_data.csv";
 outd_dir = "./data/random_data_generator/output2.csv";
 #
-colnum_labels = 11      #the column number of the labels in the data
-colnum_features = 13    #the column number where features are start in the data
+colnum_labels = 12      #the column number of the labels in the data
+colnum_features = 14    #the column number where features are start in the data
 ###
 
 
 ## DATA IMPORTING
-data <- read.csv(data_dir, sep=";", header = T)[,-1]
+data <- read.csv(data_dir, sep=";", header = T)
 tols <- read.csv(tols_dir, sep=";", header = T)
 
 ## FEATURE ANALYSIS
@@ -41,8 +41,8 @@ for(i in 1:dim(tols)[1]){
         vals <- create_data(tols[i,1], tols[i,2], tols[i,3], tols[i,4], num_features)
         data1 <- rbind(data1,c(
             "SENTETIK_VERI",
+            data[1,2],
             as.character(Sys.time()),
-            data[1,3],
             rep(NA,8),
             label,
             label,
